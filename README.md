@@ -1,0 +1,5 @@
+# React Native Dimensions API Inaccuracy on Notched/Rounded Displays
+
+This repository demonstrates a common issue encountered when using the `Dimensions` API in React Native on devices with notches or rounded corners. The `Dimensions.get('window')` method returns dimensions that do not fully account for these display features, leading to layout miscalculations. This can result in components being partially obscured or clipped.
+
+The `inaccurateDimensions.js` file shows how using `Dimensions.get('window')` leads to incorrect layout. The `accurateDimensions.js` file demonstrates the solution, using `Dimensions.get('screen')` to obtain accurate dimensions, ensuring components render correctly even on devices with notches or rounded corners.  This provides a robust solution for consistent UI across various devices.
